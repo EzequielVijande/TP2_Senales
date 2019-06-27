@@ -1,6 +1,6 @@
 function [ PartialCoefs ] = PartialCorrelation( rxx,len )
 %PARTIALCORRELATION devuelve los coeficientes de correlacion parcial
-%hastaa el orden de len.
+%hasta el orden de len.
 %   El parametro rxx es la autocorrelacion total normalizada del proceso
 % de interes.
 PartialCoefs = zeros(1,len);

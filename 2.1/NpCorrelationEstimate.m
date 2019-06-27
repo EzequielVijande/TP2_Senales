@@ -7,8 +7,8 @@ function [ Rxx ] = NpCorrelationEstimate( x ,len)
 % de valores ue se desean de la autocorrelacion.
 N= size(x);
 N = N(2);
-Rxx =zeros(1,len+1);
-for k = 1:(len+1)
+Rxx =zeros(1,len);
+for k = 1:(len)
     
     for n=1:N-k
         Rxx(k) = Rxx(k)+ x(n)*x(n+k-1);

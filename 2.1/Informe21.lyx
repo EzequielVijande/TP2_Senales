@@ -1,0 +1,292 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Ejercicio 2.1
+\end_layout
+
+\begin_layout Enumerate
+Se pide estimar los primeros 128 valores de la autocorrelacion de la secuencia
+ aleatoria X(n) adjunta con la consigna.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La estimacion se realizo con dos estimadores distintos dados por las siguientes
+ formulas:
+\end_layout
+
+\begin_layout Standard
+\align center
+Estimador no polarizdo:
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{np}(k)=\hat{R}_{np}(-k)=\frac{1}{N-k}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k),\forall k<N
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Estimador polarizado:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{p}(k)=\hat{R}_{p}(k)=\frac{1}{N}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k),\forall k<N
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\hat{R}_{p}(k)=\hat{R}_{np}(k)=0,\forall k\geqq N
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede ver facilmente que la diferencia entre ambos estimadores esta dado
+ por una constante segun:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\hat{R}_{p}(k)=\frac{1}{N}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k)=\frac{1}{N}.\frac{N-k}{N-k}.\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k)=\frac{N-k}{N}\hat{R}_{np}(k)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{p}(k)=\frac{N-k}{N}\hat{R}_{np}(k)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuacion se muestra la grafica realizada en matlab para los valores
+ estimados de la autocorrelacion utilizando ambos estimadores:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/AutocorrelacionEstimada.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Autocorrelacion estimada obtenida a partir de una funcion muestra de la
+ secuencia aleatoria.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/AutocorrelacionNorm.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Autocorrelacion normalizada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tanto para el caso de la autocorrelacion como para el de la autocorrelacion
+ normalizada se puede ver que la grafica correspondiente al estimador polarizado
+ es practicamente identica a la del estimador no polarizado.
+ Esto tiene sentido ya que la relacion entre los estimadores difiere de
+ 1 a medida que se incrementa el k, por lo que para el peor caso k=127,
+ se tiene que:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\frac{R_{p}}{R_{np}}=\frac{N-k}{N}=\frac{4096-127}{4096}\thickapprox0.969$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Se pide estimar y graficar los coeficientes de autocorrelacion parcial 
+\begin_inset Formula $\phi_{k.k}$
+\end_inset
+
+ de la secuencia.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La estimacion de dicho coeficientes se obtuvo de aplicar la ecuacion de
+ Yule-Walker utilizando los valores de 
+\begin_inset Formula $\hat{R}(k)$
+\end_inset
+
+ calculados previamente, por lo que se tiene que:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
