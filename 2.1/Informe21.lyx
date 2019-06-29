@@ -80,6 +80,8 @@ Ejercicio 2.1
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
 Se pide estimar los primeros 128 valores de la autocorrelacion de la secuencia
  aleatoria X(n) adjunta con la consigna.
 \end_layout
@@ -265,6 +267,8 @@ Tanto para el caso de la autocorrelacion como para el de la autocorrelacion
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
 Se pide estimar y graficar los coeficientes de autocorrelacion parcial 
 \begin_inset Formula $\phi_{k.k}$
 \end_inset
@@ -284,6 +288,506 @@ La estimacion de dicho coeficientes se obtuvo de aplicar la ecuacion de
 
 \begin_layout Standard
 \align center
+\begin_inset Formula 
+\[
+\stackrel{R}{\overbrace{\left(\begin{array}{ccc}
+1 & \ldots & \hat{r}_{xx}(p-1)\\
+\vdots & \vdots & \vdots\\
+\hat{r}_{xx}(p-1) & \ldots & 1
+\end{array}\right)}}.\left(\begin{array}{c}
+\hat{\phi}_{p,1}\\
+\vdots\\
+\hat{\phi}_{p,p}
+\end{array}\right)=\left(\begin{array}{c}
+\hat{r}_{xx}(1)\\
+\vdots\\
+\hat{r}_{xx}(p)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}{c}
+\hat{\phi}_{p,1}\\
+\vdots\\
+\hat{\phi}_{p,p}
+\end{array}\right)=R^{-1}.\left(\begin{array}{c}
+\hat{r}_{xx}(1)\\
+\vdots\\
+\hat{r}_{xx}(p)
+\end{array}\right)\label{eq:corrParcial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuacion se muestra la grafica obtenida de estimar los primeros 127
+ coeficientes de correlacion parcial utilizando la ecuacion (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:corrParcial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/CoefParciales.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Coeficientes-de-autocorrelacion"
+
+\end_inset
+
+Coeficientes de autocorrelacion parcial estimados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Se pide ajustar la secuencia aleatoria X(n) a un modelo y orden determinado
+ a partir de lo observado.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Es posible ajustar la secuencia a un modelo teorico determinado segun la
+ forma de la grafica de la autocorrelacion estimada, y de la grafica de
+ los coeficientes de correlacion parcial de la secuencia aleatoria.
+ Para la grafica de la autocorrelacion puede verse que la misma tiene la
+ forma de una exponencial decreciente para los primeros 5 o 6 valores de
+ la misma.Luego de estos primeros valores se tiene que los puntos oscilan
+ cerca del cero.
+\end_layout
+
+\begin_layout Standard
+En cuanto a los coeficientes de correlaciopn parcial, se puede ver en la
+ figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Coeficientes-de-autocorrelacion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) que los primeros dos valores toman valores considerablemente mayores (en
+ modulo) que el resto de los coeficientes.
+ A fines practicos puede considerarse que los primeros dos coeficientes
+ son los unicos no nulos.
+\end_layout
+
+\begin_layout Standard
+Teniendo en cuenta las caracteristicas mencionadas previamente y la siguiente
+ tabla
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Tabla obtenida del libro 
+\begin_inset Quotes eld
+\end_inset
+
+Random Signals Detection, Estimation and Data Analysis-Sam Shanmugan, Arthur
+ Breipohl
+\begin_inset Quotes erd
+\end_inset
+
+, pagina 591
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/EstimarOrden.PNG
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelos teoricos adecuados a partir de las graficas de autocorrelacion.
+ 'p' es el orden correspondiente a la parte autoregresiva del modelo ARMA
+ mientras que 'q' es el orden correspondiente a la parte moving average
+ del modelo ARMA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se decidio que el modelo ARMA(2,0), que es lo mismo que un modelo autoregresivo
+ de orden 2, es el que mejor ajusta a la secuencia aleatoria X(n).
+ La forma y parametros de dicho modelo es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+X(n)=\phi_{21}.X(n-1)+\phi_{22}X(n-2)+e(n)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $e(n)$
+\end_inset
+
+ es un ruido blanco gaussiano de varianza unitaria y para minimizar el error
+ cuadratico medio los estimadores se definen como:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\hat{\phi}_{21}=\frac{\hat{R}_{xx}(1).[\hat{R}_{xx}(0)-\hat{R}_{xx}(2)]}{\hat{R}_{xx}(0)^{2}-\hat{R}_{xx}(1)^{2}}=\frac{\hat{r}_{xx}(1).[1-\hat{r}_{xx}(2)]}{1-\hat{r}_{xx}(1)^{2}}\thickapprox0.7932
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\hat{\phi}_{22}=\frac{\hat{R}_{xx}(0).\hat{R}_{xx}(2)-\hat{R}_{xx}(1)^{2}}{\hat{R}_{xx}(0)^{2}-\hat{R}_{xx}(1)^{2}}=\frac{\hat{r}_{xx}(2)-\hat{r}_{xx}(1)^{2}]}{1-\hat{r}_{xx}(1)^{2}}\thickapprox-0.219
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Calcular analiticamente 
+\begin_inset Formula $R_{xx}(k)$
+\end_inset
+
+ y 
+\begin_inset Formula $r_{xx}(k)$
+\end_inset
+
+ (k=0,...,127) graficar y comparar con la estimada.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Para un modelo autoregresivo de orden 2 se tienen las siguientes relaciones
+ entre la autocorrelacion de la secuencia y los parametros del modelo:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+R_{xx}(m)=\phi_{21}R_{xx}(m-1)+\phi_{22}R_{xx}(m-2)\label{eq:autocorr}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\sigma_{x}^{2}=R_{xx}(0)=\frac{\sigma_{N}^{2}(1-\phi_{22})}{(1+\phi_{22})(1-\phi_{21}-\phi_{22})(1+\phi_{21}-\phi_{22})}\label{eq:varianzaAutocorr}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+r_{xx}(m)=\phi_{21}r_{xx}(m-1)+\phi_{22}r_{xx}(m-2)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+r_{xx}(0)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y teniendo en cuenta que:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $R_{xx}(m)=R_{xx}(-m)=\sigma_{x}^{2}r_{xx}(m)=\sigma_{x}^{2}r_{xx}(-m)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se pueden calcular los valores de 
+\begin_inset Formula $R_{xx}(m)$
+\end_inset
+
+ utilizando los estimadores 
+\begin_inset Formula $\hat{\phi}_{21}$
+\end_inset
+
+ y 
+\begin_inset Formula $\hat{\phi}_{22}$
+\end_inset
+
+ haciendo uso de las ecuaciones (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:autocorr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:varianzaAutocorr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Asimismo, es evidente que con las mismas ecuaciones se pueden calcular los
+ 
+\begin_inset Formula $r_{xx}(m)$
+\end_inset
+
+.
+ A continuacion se presentan las graficas en las que se comparan las autocorrela
+ciones teoricas de X(n) con las 
+\begin_inset Formula $\hat{R}_{xx}(m)$
+\end_inset
+
+ y las 
+\begin_inset Formula $\hat{r}_{xx}(m)$
+\end_inset
+
+ estimadas anteriormente:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/CorrTeo.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Autocorrelacion estimada y teorica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/CorrNormTeo.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Autocorrelacion normalizada estimada y teorica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La autocorrelacion de un modelo autoregresivo de orden 2 esta dado por la
+ suma de dos exponenciales.En este caso se puede ver que el modelo teorico
+ coincide casi de manera perfecta para los primeros 7 valores de la autocorrelac
+ion, para los demas valores la autocorrelacion teorica es practicamente
+ nula dado que decrece exponencialmente.Sin embargo, los valores de autocorrelaci
+on estimados para 
+\begin_inset Formula $m\geq7$
+\end_inset
+
+ aunque toman valores pequenos, no son tan cercano al cero como en el modelo
+ teorico.Ademas, no tienden a cero exponencialmente sino que tienen una forma
+ senoidal que oscila alrededor del cero.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Estimar la densidad espectral de potencia de X(n) utilizando dos metodos
+ distintos(promediacion de periodogramas y transformada de fourier de la
+ autocorrelacion estimada)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 
 \end_layout
 
