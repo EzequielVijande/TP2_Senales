@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -29,9 +29,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -55,13 +57,20 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -74,6 +83,22 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
 
 \begin_layout Section
 Ejercicio 2.1
@@ -88,13 +113,13 @@ Se pide estimar los primeros 128 valores de la autocorrelacion de la secuencia
 
 \begin_deeper
 \begin_layout Standard
-La estimacion se realizo con dos estimadores distintos dados por las siguientes
+La estimación se realizo con dos estimadores distintos dados por las siguientes
  formulas:
 \end_layout
 
 \begin_layout Standard
 \align center
-Estimador no polarizdo:
+Estimador no polarizado:
 \begin_inset Formula 
 \begin{equation}
 \hat{R}_{np}(k)=\hat{R}_{np}(-k)=\frac{1}{N-k}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k),\forall k<N
@@ -135,8 +160,8 @@ Estimador polarizado:
 \end_layout
 
 \begin_layout Standard
-Se puede ver facilmente que la diferencia entre ambos estimadores esta dado
- por una constante segun:
+Se puede ver fácilmente que la diferencia entre ambos estimadores esta dado
+ por una constante según:
 \end_layout
 
 \begin_layout Standard
@@ -164,7 +189,7 @@ Se puede ver facilmente que la diferencia entre ambos estimadores esta dado
 \end_layout
 
 \begin_layout Standard
-A continuacion se muestra la grafica realizada en matlab para los valores
+A continuación se muestra la gráfica realizada en matlab para los valores
  estimados de la autocorrelacion utilizando ambos estimadores:
 \end_layout
 
@@ -191,7 +216,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Autocorrelacion estimada obtenida a partir de una funcion muestra de la
+Autocorrelacion estimada obtenida a partir de una función muestra de la
  secuencia aleatoria.
 \end_layout
 
@@ -250,9 +275,9 @@ Autocorrelacion normalizada
 
 \begin_layout Standard
 Tanto para el caso de la autocorrelacion como para el de la autocorrelacion
- normalizada se puede ver que la grafica correspondiente al estimador polarizado
- es practicamente identica a la del estimador no polarizado.
- Esto tiene sentido ya que la relacion entre los estimadores difiere de
+ normalizada se puede ver que la gráfica correspondiente al estimador polarizado
+ es prácticamente idéntica a la del estimador no polarizado.
+ Esto tiene sentido ya que la relación entre los estimadores difiere de
  1 a medida que se incrementa el k, por lo que para el peor caso k=127,
  se tiene que:
 \end_layout
@@ -278,7 +303,7 @@ Se pide estimar y graficar los coeficientes de autocorrelacion parcial
 
 \begin_deeper
 \begin_layout Standard
-La estimacion de dicho coeficientes se obtuvo de aplicar la ecuacion de
+La estimación de dicho coeficientes se obtuvo de aplicar la ecuación de
  Yule-Walker utilizando los valores de 
 \begin_inset Formula $\hat{R}(k)$
 \end_inset
@@ -331,8 +356,8 @@ La estimacion de dicho coeficientes se obtuvo de aplicar la ecuacion de
 \end_layout
 
 \begin_layout Standard
-A continuacion se muestra la grafica obtenida de estimar los primeros 127
- coeficientes de correlacion parcial utilizando la ecuacion (
+A continuación se muestra la gráfica obtenida de estimar los primeros 127
+ coeficientes de correlación parcial utilizando la ecuación (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:corrParcial"
@@ -401,17 +426,17 @@ Se pide ajustar la secuencia aleatoria X(n) a un modelo y orden determinado
 
 \begin_deeper
 \begin_layout Standard
-Es posible ajustar la secuencia a un modelo teorico determinado segun la
- forma de la grafica de la autocorrelacion estimada, y de la grafica de
- los coeficientes de correlacion parcial de la secuencia aleatoria.
- Para la grafica de la autocorrelacion puede verse que la misma tiene la
+Es posible ajustar la secuencia a un modelo teórico determinado según la
+ forma de la gráfica de la autocorrelacion estimada, y de la gráfica de
+ los coeficientes de correlación parcial de la secuencia aleatoria.
+ Para la gráfica de la autocorrelacion puede verse que la misma tiene la
  forma de una exponencial decreciente para los primeros 5 o 6 valores de
  la misma.Luego de estos primeros valores se tiene que los puntos oscilan
  cerca del cero.
 \end_layout
 
 \begin_layout Standard
-En cuanto a los coeficientes de correlaciopn parcial, se puede ver en la
+En cuanto a los coeficientes de correlación parcial, se puede ver en la
  figura (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -424,12 +449,12 @@ noprefix "false"
 
 ) que los primeros dos valores toman valores considerablemente mayores (en
  modulo) que el resto de los coeficientes.
- A fines practicos puede considerarse que los primeros dos coeficientes
- son los unicos no nulos.
+ A fines prácticos puede considerarse que los primeros dos coeficientes
+ son los únicos no nulos.
 \end_layout
 
 \begin_layout Standard
-Teniendo en cuenta las caracteristicas mencionadas previamente y la siguiente
+Teniendo en cuenta las características mencionadas previamente y la siguiente
  tabla
 \begin_inset Foot
 status collapsed
@@ -475,7 +500,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelos teoricos adecuados a partir de las graficas de autocorrelacion.
+Modelos teóricos adecuados a partir de las graficas de autocorrelacion.
  'p' es el orden correspondiente a la parte autoregresiva del modelo ARMA
  mientras que 'q' es el orden correspondiente a la parte moving average
  del modelo ARMA.
@@ -496,9 +521,9 @@ Modelos teoricos adecuados a partir de las graficas de autocorrelacion.
 \end_layout
 
 \begin_layout Standard
-Se decidio que el modelo ARMA(2,0), que es lo mismo que un modelo autoregresivo
+Se decidió que el modelo ARMA(2,0), que es lo mismo que un modelo auto-regresivo
  de orden 2, es el que mejor ajusta a la secuencia aleatoria X(n).
- La forma y parametros de dicho modelo es la siguiente:
+ La forma y parámetros de dicho modelo es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -519,7 +544,7 @@ Donde
 \end_inset
 
  es un ruido blanco gaussiano de varianza unitaria y para minimizar el error
- cuadratico medio los estimadores se definen como:
+ cuadrático medio los estimadores se definen como:
 \end_layout
 
 \begin_layout Standard
@@ -550,7 +575,7 @@ Donde
 \begin_layout Enumerate
 
 \series bold
-Calcular analiticamente 
+Calcular analíticamente 
 \begin_inset Formula $R_{xx}(k)$
 \end_inset
 
@@ -563,8 +588,8 @@ Calcular analiticamente
 
 \begin_deeper
 \begin_layout Standard
-Para un modelo autoregresivo de orden 2 se tienen las siguientes relaciones
- entre la autocorrelacion de la secuencia y los parametros del modelo:
+Para un modelo auto regresivo de orden 2 se tienen las siguientes relaciones
+ entre la autocorrelacion de la secuencia y los parámetros del modelo:
 \end_layout
 
 \begin_layout Standard
@@ -670,8 +695,8 @@ Asimismo, es evidente que con las mismas ecuaciones se pueden calcular los
 \end_inset
 
 .
- A continuacion se presentan las graficas en las que se comparan las autocorrela
-ciones teoricas de X(n) con las 
+ A continuación se presentan las gráficas en las que se comparan las auto-correl
+aciones teóricas de X(n) con las 
 \begin_inset Formula $\hat{R}_{xx}(m)$
 \end_inset
 
@@ -705,7 +730,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Autocorrelacion estimada y teorica
+Autocorrelacion estimada y teórica
 \end_layout
 
 \end_inset
@@ -745,7 +770,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Autocorrelacion normalizada estimada y teorica
+Autocorrelacion normalizada estimada y teórica
 \end_layout
 
 \end_inset
@@ -763,18 +788,183 @@ Autocorrelacion normalizada estimada y teorica
 \end_layout
 
 \begin_layout Standard
-La autocorrelacion de un modelo autoregresivo de orden 2 esta dado por la
- suma de dos exponenciales.En este caso se puede ver que el modelo teorico
+La autocorrelacion de un modelo auto-regresivo de orden 2 esta dado por
+ la suma de dos exponenciales.En este caso se puede ver que el modelo teórico
  coincide casi de manera perfecta para los primeros 7 valores de la autocorrelac
-ion, para los demas valores la autocorrelacion teorica es practicamente
+ion, para los demás valores la autocorrelacion teórica es prácticamente
  nula dado que decrece exponencialmente.Sin embargo, los valores de autocorrelaci
 on estimados para 
 \begin_inset Formula $m\geq7$
 \end_inset
 
- aunque toman valores pequenos, no son tan cercano al cero como en el modelo
- teorico.Ademas, no tienden a cero exponencialmente sino que tienen una forma
+ aunque toman valores pequeños, no son tan cercano al cero como en el modelo
+ teórico.Ademas, no tienden a cero exponencialmente sino que tienen una forma
  senoidal que oscila alrededor del cero.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Estimar la densidad espectral de potencia de X(n) utilizando dos métodos
+ distintos(promediacion de periodogramas y transformada de Fourier de la
+ autocorrelacion estimada)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A continuación se presenta la gráfica de la densidad espectral de potencia
+ (psd) de X(n) calculada de 3 maneras distintas.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes21/Espectrogramas.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Densidades espectrales de potencia calculadas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La gráfica teórica se comsiguio utilizando la formula de psd para un modelo
+ AR de orden 2:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+S_{xx_{teorico}}(f)=\frac{\sigma_{N}^{2}}{\left|1-\phi_{21}e^{-j2\pi f}-\phi_{22}e^{-j4\pi f}\right|^{2}}\thickapprox\frac{\sigma_{N}^{2}}{\left|1-\hat{\phi}_{21}e^{-j2\pi f}-\hat{\phi}_{22}e^{-j4\pi f}\right|^{2}},\left|f\right|<\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mientras que la curva naranja se obtuvo mediante la fft de la autocorrelacion
+ estimada según:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\hat{S}_{xx_{Fourier}}(f)=\stackrel[k=-(N-1)]{N-1}{\sum}\hat{R}_{xx}(k)e^{-j2\pi kf},\left|f\right|<\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y la curva correspondiente a la promediacion de periodogramas se obtuvo
+ usando el siguiente estimador de psd:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\hat{S}_{xx_{N}}=\frac{1}{N}\left|X(f)\right|^{2},\left|f\right|<\frac{1}{2}\label{eq:periodograma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+\hat{S}_{xx_{periodograma}}=\frac{1}{n}\stackrel[k=1]{n}{\sum}S_{xx_{n}}(f)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se aplico la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:periodograma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) para n bloques de X(n) de largo 
+\begin_inset Formula $\left[\frac{N}{n}\right]$
+\end_inset
+
+ cada uno.
+ Donde X(f) es la transformada de Fourier de la función muestra de X(n)
+ almacenada, N es el numero de muestras almacenados de dicha función (4096)
+ y se tomo 
+\begin_inset Formula $n=32$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Comparando las gráfica puede verse que todas tienen forma similar.Sin embargo,
+ parece que la gráfica obtenida de la transformación de la autocorrelacion
+ estimada toma valores mas similares a la psd teórica que la curva obtenida
+ mediante la promediacion de periodogramas.Esto es posible ya que el estimador
+ mediante promediacion de periodogramas es un estimador sesgado, y mientras
+ mas muestras se utilizan para calcular la 
+\begin_inset Formula $X(f)$
+\end_inset
+
+ se tiene que su valor medio se asemeja a la verdadera psd.
+ A pesar de esto, existe una relación de compromiso entre que tan sesgado
+ es el estimador y que tan grande es su varianza, no se puede disminuir
+ uno sin que el otro incremente.Para la gráfica realizada se utilizo una
+ ventana cuadrada para dividir los bloques de la función muestra y aplicar
+ la promediacion de periodogramas.
+ Cambiando el tipo de ventana empleada y el numero de bloques utilizados
+ para la promediacion, es posible que se pueda conseguir una estimación
+ mas precisa que la que se obtuvo transformando los valores de autocorrelacion
+ estimados.
 \end_layout
 
 \end_deeper
