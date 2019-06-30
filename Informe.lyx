@@ -1,0 +1,2192 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\end_layout
+
+\begin_layout Plain Layout
+
+% University Assignment Title Page  
+\end_layout
+
+\begin_layout Plain Layout
+
+% LaTeX Template % Version 1.0 (27/12/12) 
+\end_layout
+
+\begin_layout Plain Layout
+
+% % This template has been downloaded from: 
+\end_layout
+
+\begin_layout Plain Layout
+
+% http://www.LaTeXTemplates.com % % Original author: 
+\end_layout
+
+\begin_layout Plain Layout
+
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation) % % License:
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/) 
+\end_layout
+
+\begin_layout Plain Layout
+
+%  % Instructions for using this template: 
+\end_layout
+
+\begin_layout Plain Layout
+
+% This title page is capable of being compiled as is.
+ This is not useful for  
+\end_layout
+
+\begin_layout Plain Layout
+
+% including it in another document.
+ To do this, you have two options:  
+\end_layout
+
+\begin_layout Plain Layout
+
+% % 1) Copy/paste everything between 
+\backslash
+begin{document} and 
+\backslash
+end{document}  
+\end_layout
+
+\begin_layout Plain Layout
+
+% starting at 
+\backslash
+begin{titlepage} and paste this into another LaTeX file where you  
+\end_layout
+
+\begin_layout Plain Layout
+
+% want your title page.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+% OR % 2) Remove everything outside the 
+\backslash
+begin{titlepage} and 
+\backslash
+end{titlepage} and  
+\end_layout
+
+\begin_layout Plain Layout
+
+% move this file to the same directory as the LaTeX file you wish to add
+ it to.
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+% Then add 
+\backslash
+input{./title_page_1.tex} to your LaTeX file where you want your 
+\end_layout
+
+\begin_layout Plain Layout
+
+% title page.
+ % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\backslash
+title{Title page with logo} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+--------- 
+\end_layout
+
+\begin_layout Plain Layout
+
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}          
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+HRule}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+rule{
+\backslash
+linewidth}{0.5mm}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Defines a new command for the horizontal lines, change thickness here
+              
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+center 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Center everything on the page               
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------    
+\end_layout
+
+\begin_layout Plain Layout
+
+%	HEADING SECTIONS     
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------              
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+LARGE Instituto Tecnológico de Buenos Aires}
+\backslash
+
+\backslash
+[2cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Name of your university/college     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+Large 22.67 Señales Aleatorias}
+\backslash
+
+\backslash
+[1.5cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Major heading such as course name     
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+large Trabajo Práctico de Simulacion N°2}
+\backslash
+
+\backslash
+[0.5cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Minor heading such as course title              
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------    
+\end_layout
+
+\begin_layout Plain Layout
+
+%	TITLE SECTION    
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------          
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[0.5cm]     
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+huge 
+\backslash
+bfseries Trabajo practico}
+\backslash
+
+\backslash
+[0.4cm] % Title of your document     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[2cm]               
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------     
+\end_layout
+
+\begin_layout Plain Layout
+
+%	AUTHOR SECTION     
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------             
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth}     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushleft} 
+\backslash
+large     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Grupo 4:}
+\backslash
+
+\backslash
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+%names     
+\end_layout
+
+\begin_layout Plain Layout
+
+[.3cm]     Manuel 
+\backslash
+textsc{Dieguez}
+\backslash
+
+\backslash
+     Leg.
+ 56273
+\backslash
+
+\backslash
+      [.3cm]    
+\end_layout
+
+\begin_layout Plain Layout
+
+Matías 
+\backslash
+textsc{Larroque}
+\backslash
+
+\backslash
+     Leg.
+ 56597
+\backslash
+
+\backslash
+      [.3cm]     
+\end_layout
+
+\begin_layout Plain Layout
+
+Manuel 
+\backslash
+textsc{Mollón}
+\backslash
+
+\backslash
+     Leg.
+ 58023
+\backslash
+
+\backslash
+      [.3cm]     
+\end_layout
+
+\begin_layout Plain Layout
+
+Ezequiel 
+\backslash
+textsc{Vijande}
+\backslash
+
+\backslash
+     Leg.
+ 58057
+\backslash
+
+\backslash
+      [.3cm]     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft}     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}     ~     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth}     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright} 
+\backslash
+large     
+\backslash
+emph{Profesor:} 
+\backslash
+
+\backslash
+     [.3cm]     
+\end_layout
+
+\begin_layout Plain Layout
+
+Gustavo Abraham 
+\backslash
+textsc{Hirchoren}
+\backslash
+
+\backslash
+ % Supervisor's Name
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{flushright}     
+\backslash
+end{minipage}
+\backslash
+
+\backslash
+[2cm]              
+\end_layout
+
+\begin_layout Plain Layout
+
+% If you don't want a supervisor, uncomment the two lines below and remove
+ the section above     
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+Large 
+\backslash
+emph{Author:}
+\backslash
+
+\backslash
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+%John 
+\backslash
+textsc{Smith}
+\backslash
+
+\backslash
+[3cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Your name             
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------     
+\end_layout
+
+\begin_layout Plain Layout
+
+%	DATE SECTION     
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------              
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill     
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+large Entregado: 30 de Junio de 2019}
+\backslash
+
+\backslash
+[2cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Date, change the 
+\backslash
+today to a set date if you want to be precise              %--------------------
+--------------------------------------------------------------------   
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+%	LOGO SECTION    
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------             
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{logo.png}
+\backslash
+
+\backslash
+[1cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% %Include a department/university logo - this will require the graphicx
+ %package               %-------------------------------------------------------
+---------------------------------              
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+vfill % Fill the rest of the page with whitespace              
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang spanish
+Ejercicio 2.1
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang spanish
+Se pide estimar los primeros 128 valores de la autocorrelacion de la secuencia
+ aleatoria X(n) adjunta con la consigna.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+La estimación se realizo con dos estimadores distintos dados por las siguientes
+ formulas:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+Estimador no polarizado:
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{np}(k)=\hat{R}_{np}(-k)=\frac{1}{N-k}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k),\forall k<N
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+Estimador polarizado:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{p}(k)=\hat{R}_{p}(k)=\frac{1}{N}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k),\forall k<N
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\[
+\hat{R}_{p}(k)=\hat{R}_{np}(k)=0,\forall k\geqq N
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Se puede ver fácilmente que la diferencia entre ambos estimadores esta dado
+ por una constante según:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\[
+\hat{R}_{p}(k)=\frac{1}{N}\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k)=\frac{1}{N}.\frac{N-k}{N-k}.\stackrel[i=0]{N-k-1}{\sum}X(i)X(i+k)=\frac{N-k}{N}\hat{R}_{np}(k)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{p}(k)=\frac{N-k}{N}\hat{R}_{np}(k)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+A continuación se muestra la gráfica realizada en matlab para los valores
+ estimados de la autocorrelacion utilizando ambos estimadores:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/AutocorrelacionEstimada.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Autocorrelacion estimada obtenida a partir de una función muestra de la
+ secuencia aleatoria.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/AutocorrelacionNorm.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Autocorrelacion normalizada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Tanto para el caso de la autocorrelacion como para el de la autocorrelacion
+ normalizada se puede ver que la gráfica correspondiente al estimador polarizado
+ es prácticamente idéntica a la del estimador no polarizado.
+ Esto tiene sentido ya que la relación entre los estimadores difiere de
+ 1 a medida que se incrementa el k, por lo que para el peor caso k=127,
+ se tiene que:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula $\frac{R_{p}}{R_{np}}=\frac{N-k}{N}=\frac{4096-127}{4096}\thickapprox0.969$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang spanish
+Se pide estimar y graficar los coeficientes de autocorrelacion parcial 
+\begin_inset Formula $\phi_{k.k}$
+\end_inset
+
+ de la secuencia.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+La estimación de dicho coeficientes se obtuvo de aplicar la ecuación de
+ Yule-Walker utilizando los valores de 
+\begin_inset Formula $\hat{R}(k)$
+\end_inset
+
+ calculados previamente, por lo que se tiene que:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\[
+\stackrel{R}{\overbrace{\left(\begin{array}{ccc}
+1 & \ldots & \hat{r}_{xx}(p-1)\\
+\vdots & \vdots & \vdots\\
+\hat{r}_{xx}(p-1) & \ldots & 1
+\end{array}\right)}}.\left(\begin{array}{c}
+\hat{\phi}_{p,1}\\
+\vdots\\
+\hat{\phi}_{p,p}
+\end{array}\right)=\left(\begin{array}{c}
+\hat{r}_{xx}(1)\\
+\vdots\\
+\hat{r}_{xx}(p)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}{c}
+\hat{\phi}_{p,1}\\
+\vdots\\
+\hat{\phi}_{p,p}
+\end{array}\right)=R^{-1}.\left(\begin{array}{c}
+\hat{r}_{xx}(1)\\
+\vdots\\
+\hat{r}_{xx}(p)
+\end{array}\right)\label{eq:corrParcial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+A continuación se muestra la gráfica obtenida de estimar los primeros 127
+ coeficientes de correlación parcial utilizando la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:corrParcial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/CoefParciales.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Coeficientes-de-autocorrelacion"
+
+\end_inset
+
+Coeficientes de autocorrelacion parcial estimados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang spanish
+Se pide ajustar la secuencia aleatoria X(n) a un modelo y orden determinado
+ a partir de lo observado.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Es posible ajustar la secuencia a un modelo teórico determinado según la
+ forma de la gráfica de la autocorrelacion estimada, y de la gráfica de
+ los coeficientes de correlación parcial de la secuencia aleatoria.
+ Para la gráfica de la autocorrelacion puede verse que la misma tiene la
+ forma de una exponencial decreciente para los primeros 5 o 6 valores de
+ la misma.Luego de estos primeros valores se tiene que los puntos oscilan
+ cerca del cero.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En cuanto a los coeficientes de correlación parcial, se puede ver en la
+ figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Coeficientes-de-autocorrelacion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) que los primeros dos valores toman valores considerablemente mayores (en
+ modulo) que el resto de los coeficientes.
+ A fines prácticos puede considerarse que los primeros dos coeficientes
+ son los únicos no nulos.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Teniendo en cuenta las características mencionadas previamente y la siguiente
+ tabla
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang spanish
+Tabla obtenida del libro 
+\begin_inset Quotes eld
+\end_inset
+
+Random Signals Detection, Estimation and Data Analysis-Sam Shanmugan, Arthur
+ Breipohl
+\begin_inset Quotes erd
+\end_inset
+
+, pagina 591
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/EstimarOrden.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Modelos teóricos adecuados a partir de las graficas de autocorrelacion.
+ 'p' es el orden correspondiente a la parte autoregresiva del modelo ARMA
+ mientras que 'q' es el orden correspondiente a la parte moving average
+ del modelo ARMA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Se decidió que el modelo ARMA(2,0), que es lo mismo que un modelo auto-regresivo
+ de orden 2, es el que mejor ajusta a la secuencia aleatoria X(n).
+ La forma y parámetros de dicho modelo es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+X(n)=\phi_{21}.X(n-1)+\phi_{22}X(n-2)+e(n)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Donde 
+\begin_inset Formula $e(n)$
+\end_inset
+
+ es un ruido blanco gaussiano de varianza unitaria y para minimizar el error
+ cuadrático medio los estimadores se definen como:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\[
+\hat{\phi}_{21}=\frac{\hat{R}_{xx}(1).[\hat{R}_{xx}(0)-\hat{R}_{xx}(2)]}{\hat{R}_{xx}(0)^{2}-\hat{R}_{xx}(1)^{2}}=\frac{\hat{r}_{xx}(1).[1-\hat{r}_{xx}(2)]}{1-\hat{r}_{xx}(1)^{2}}\thickapprox0.7932
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\[
+\hat{\phi}_{22}=\frac{\hat{R}_{xx}(0).\hat{R}_{xx}(2)-\hat{R}_{xx}(1)^{2}}{\hat{R}_{xx}(0)^{2}-\hat{R}_{xx}(1)^{2}}=\frac{\hat{r}_{xx}(2)-\hat{r}_{xx}(1)^{2}}{1-\hat{r}_{xx}(1)^{2}}\thickapprox-0.219
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang spanish
+Calcular analíticamente 
+\begin_inset Formula $R_{xx}(k)$
+\end_inset
+
+ y 
+\begin_inset Formula $r_{xx}(k)$
+\end_inset
+
+ (k=0,...,127) graficar y comparar con la estimada.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Para un modelo auto regresivo de orden 2 se tienen las siguientes relaciones
+ entre la autocorrelacion de la secuencia y los parámetros del modelo:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+R_{xx}(m)=\phi_{21}R_{xx}(m-1)+\phi_{22}R_{xx}(m-2)\label{eq:autocorr}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\sigma_{x}^{2}=R_{xx}(0)=\frac{\sigma_{N}^{2}(1-\phi_{22})}{(1+\phi_{22})(1-\phi_{21}-\phi_{22})(1+\phi_{21}-\phi_{22})}\label{eq:varianzaAutocorr}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+r_{xx}(m)=\phi_{21}r_{xx}(m-1)+\phi_{22}r_{xx}(m-2)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\[
+r_{xx}(0)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Y teniendo en cuenta que:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula $R_{xx}(m)=R_{xx}(-m)=\sigma_{x}^{2}r_{xx}(m)=\sigma_{x}^{2}r_{xx}(-m)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Se pueden calcular los valores de 
+\begin_inset Formula $R_{xx}(m)$
+\end_inset
+
+ utilizando los estimadores 
+\begin_inset Formula $\hat{\phi}_{21}$
+\end_inset
+
+ y 
+\begin_inset Formula $\hat{\phi}_{22}$
+\end_inset
+
+ haciendo uso de las ecuaciones (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:autocorr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:varianzaAutocorr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Asimismo, es evidente que con las mismas ecuaciones se pueden calcular los
+ 
+\begin_inset Formula $r_{xx}(m)$
+\end_inset
+
+.
+ A continuación se presentan las gráficas en las que se comparan las auto-correl
+aciones teóricas de X(n) con las 
+\begin_inset Formula $\hat{R}_{xx}(m)$
+\end_inset
+
+ y las 
+\begin_inset Formula $\hat{r}_{xx}(m)$
+\end_inset
+
+ estimadas anteriormente:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/CorrTeo.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Autocorrelacion estimada y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/CorrNormTeo.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Autocorrelacion normalizada estimada y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+La autocorrelacion de un modelo auto-regresivo de orden 2 esta dado por
+ la suma de dos exponenciales.En este caso se puede ver que el modelo teórico
+ coincide casi de manera perfecta para los primeros 7 valores de la autocorrelac
+ion, para los demás valores la autocorrelacion teórica es prácticamente
+ nula dado que decrece exponencialmente.Sin embargo, los valores de autocorrelaci
+on estimados para 
+\begin_inset Formula $m\geq7$
+\end_inset
+
+ aunque toman valores pequeños, no son tan cercano al cero como en el modelo
+ teórico.Ademas, no tienden a cero exponencialmente sino que tienen una forma
+ senoidal que oscila alrededor del cero.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang spanish
+Estimar la densidad espectral de potencia de X(n) utilizando dos métodos
+ distintos(promediacion de periodogramas y transformada de Fourier de la
+ autocorrelacion estimada)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+A continuación se presenta la gráfica de la densidad espectral de potencia
+ (psd) de X(n) calculada de 3 maneras distintas.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.1/Imagenes21/Espectrogramas.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Densidades espectrales de potencia calculadas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+La gráfica teórica se comsiguio utilizando la formula de psd para un modelo
+ AR de orden 2:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+S_{xx_{teorico}}(f)=\frac{\sigma_{N}^{2}}{\left|1-\phi_{21}e^{-j2\pi f}-\phi_{22}e^{-j4\pi f}\right|^{2}}\thickapprox\frac{\sigma_{N}^{2}}{\left|1-\hat{\phi}_{21}e^{-j2\pi f}-\hat{\phi}_{22}e^{-j4\pi f}\right|^{2}},\left|f\right|<\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Mientras que la curva naranja se obtuvo mediante la fft de la autocorrelacion
+ estimada según:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\hat{S}_{xx_{Fourier}}(f)=\stackrel[k=-(N-1)]{N-1}{\sum}\hat{R}_{xx}(k)e^{-j2\pi kf},\left|f\right|<\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+y la curva correspondiente a la promediacion de periodogramas se obtuvo
+ usando el siguiente estimador de psd:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\hat{S}_{xx_{N}}=\frac{1}{N}\left|X(f)\right|^{2},\left|f\right|<\frac{1}{2}\label{eq:periodograma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula 
+\begin{equation}
+\hat{S}_{xx_{periodograma}}=\frac{1}{n}\stackrel[k=1]{n}{\sum}S_{xx_{n}}(f)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Se aplico la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:periodograma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) para n bloques de X(n) de largo 
+\begin_inset Formula $\left[\frac{N}{n}\right]$
+\end_inset
+
+ cada uno.
+ Donde X(f) es la transformada de Fourier de la función muestra de X(n)
+ almacenada, N es el numero de muestras almacenados de dicha función (4096)
+ y se tomo 
+\begin_inset Formula $n=32$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Comparando las gráfica puede verse que todas tienen forma similar.Sin embargo,
+ parece que la gráfica obtenida de la transformación de la autocorrelacion
+ estimada toma valores mas similares a la psd teórica que la curva obtenida
+ mediante la promediacion de periodogramas.Esto es posible ya que el estimador
+ mediante promediacion de periodogramas es un estimador sesgado, y mientras
+ mas muestras se utilizan para calcular la 
+\begin_inset Formula $X(f)$
+\end_inset
+
+ se tiene que su valor medio se asemeja a la verdadera psd.
+ A pesar de esto, existe una relación de compromiso entre que tan sesgado
+ es el estimador y que tan grande es su varianza, no se puede disminuir
+ uno sin que el otro incremente.Para la gráfica realizada se utilizo una
+ ventana cuadrada para dividir los bloques de la función muestra y aplicar
+ la promediacion de periodogramas.
+ Cambiando el tipo de ventana empleada y el numero de bloques utilizados
+ para la promediacion, es posible que se pueda conseguir una estimación
+ mas precisa que la que se obtuvo transformando los valores de autocorrelacion
+ estimados.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\lang spanish
+Implementación de un predictor óptimo lineal sobre una grabación de voz
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Primero se escucho el audio original, al que luego se le sumo AWGN de varianza
+ 
+\begin_inset Formula $\sigma^{2}=10^{-3}$
+\end_inset
+
+.
+ Como resultado se tiene una señal con ruido.
+ En la siguiente imagen se puede ver la comparación entre la señal original
+ con la señal + ruido banco:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.2/imagenes/x-vs-s.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Señal Original vs Señal + AWGN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Teniendo en cuenta que la señal de audio es ergódica cada 
+\begin_inset Formula $20ms$
+\end_inset
+
+, se separa el audio en ventanas de ese largo, donde a cada una se busca
+ el predictor optimo y luego se concatenan todas las ventanas.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Luego se estimo la auto-correlación de la señal original teniendo en cuenta
+ que el ruido blanco esta incorrelacionado con la señal, por lo que se tiene:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula $R_{XX}(n)=R_{SS}(n)+R_{NN}(n)=R_{SS}(n)+\delta(n)\cdotp\sigma^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Por lo que despejando se obtiene:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula $R_{SS}(n)=\begin{cases}
+R_{XX}(n)-\delta(n)\cdotp\sigma^{2} & n=0\\
+R_{XX}(n) & n\neq0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Luego de tener las auto-correlaciones, se crea la matriz y el vector de
+ la ecuación Yule-Walker, dada por la siguiente forma:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.2/imagenes/Yule-Walker.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Ecuación de Yule-Walker
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Despejando de esta formula se obtienen los coeficientes del filtro.
+ Luego de tener estos coeficientes, se convoluciona la señal con los coeficiente
+s, obteniendo así el predictor optimo.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+A continuación se muestra en una figura el resultado obtenido en comparación
+ a las señales originales:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.2/imagenes/s-vs-sp-1.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../2.2/imagenes/s-vs-sp-2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Señal original vs señal predecida
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.2/imagenes/x-vs-sp-1.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../2.2/imagenes/x-vs-sp-2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Señal predecida vs señal original + AWGN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Comparación con señal predecida
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Luego se calculo el error, resultando en la siguiente función:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.2/imagenes/e.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Señal error
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Con estos datos se calculo la ganancia de predicción, dada por la formula:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Formula $G_{p}=\frac{\sum_{i=1}^{N}S(i)^{2}}{\sum_{i=1}^{N}e(i)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Este procedimiento se aplico con un orden de filtro desde 
+\begin_inset Formula $n=1$
+\end_inset
+
+ a 
+\begin_inset Formula $n=20$
+\end_inset
+
+, mostrando que efectivamente la maxima ganancia de predicción estaba en
+ el orden entre 10 a 15.
+ Esto se puede ver en el siguiente graficó:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename ../2.2/imagenes/gp.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Ganancia de predicción vs orden del filtro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Luego se escucharon el audio con ruido y el audio predecido, confirmando
+ que efectivamente se pudo predecir correctamente la señal de audio original,
+ eliminando considerable parte del ruido agregado.
+\end_layout
+
+\end_body
+\end_document
